@@ -10,7 +10,7 @@ def pascal_triangle(n):
     triangle = []
     if type(n) is not int or n <= 0:
         return triangle
-    for i in range(1, n):
+    for i in range(n):
         line = []
         for j in range(i + 1):
             if j == 0 or j == i:
