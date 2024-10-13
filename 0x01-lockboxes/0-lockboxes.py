@@ -13,7 +13,7 @@ def canUnlockAll(boxes):
         boxIdx = unseen_boxes.pop()
         if not boxIdx or boxIdx >= n or boxIdx < 0:
             continue
-        if boxIdx not in s_boxes:
+        if boxIdx not in se_boxes:
             unseen_boxes = unseen_boxes.union(boxes[boxIdx])
             se_boxes.add(boxIdx)
     return n == len(se_boxes)
